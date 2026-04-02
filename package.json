@@ -1,0 +1,20 @@
+{
+  "name": "vite-rolldown-cjs-interop-collision",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:fixture": "pnpm --filter cjs-dependency build",
+    "build": "pnpm build:fixture && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cjs-dependency": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "vite": "^8.0.5"
+  },
+  "packageManager": "pnpm@10.13.1"
+}

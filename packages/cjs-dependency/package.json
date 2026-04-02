@@ -1,0 +1,19 @@
+{
+  "name": "cjs-dependency",
+  "version": "1.0.0",
+  "description": "A cjs dependency built with tsdown in  unbundle mode",
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "tsdown": "^0.21.7",
+    "typescript": "^5.8.3"
+  },
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": "./dist/index.cjs",
+    "./package.json": "./package.json"
+  },
+  "module": "./dist/index.mjs"
+}
